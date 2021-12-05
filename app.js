@@ -38,3 +38,90 @@ function createNEWemployee() {
 }
 
 // team members function
+function addManager() {
+    inquirer.prompt ([
+        {
+            type: "input",
+            name: "managerName",
+            message: "What is the name of the manager?",
+        },
+        {
+            type: "input",
+            name: "managerID",
+            message: "What is the manager's ID?",
+        },
+        {
+            type: "input",
+            name: "managerEmail",
+            message: "What is the manager's email?",
+        },
+        {
+            type: "input",
+            name: "managerPhone",
+            message: "What is the manager's phone number?",
+        },
+    ]).then(function(answer) {
+        let manager = new Manager(answer.managerName,answer.managerID, answer.managerEmail, answer.managerPhone)
+        employees.push(manager);
+        createNEWemployee();
+    });
+
+}  
+function addEngineer() {
+    inquirer.prompt ([
+        {
+            type: "input",
+            name: "engineerName",
+            message: "What is the name of the engineer?",
+        },
+        {
+            type: "input",
+            name: "engineerID",
+            message: "What is the engineer's ID?",
+        },
+        {
+            type: "input",
+            name: "engineerEmail",
+            message: "What is the engineer's email?",
+        },
+        {
+            type: "input",
+            name: "engineerPhone",
+            message: "What is the engineer's phone number?",
+        },
+    ]).then(function(answer) {
+        let engineer = new Engineer(answer.engineerName, answer.engineerID, answer.engineerEmail, answer.engineerGithub)
+        employees.push(engineer);
+        createNEWemployee();
+    });
+
+} 
+function addIntern() {
+    inquirer.prompt ([
+        {
+            type: "input",
+            name: "internName",
+            message: "What is the name of the intern?",
+        },
+        {
+            type: "input",
+            name: "internID",
+            message: "What is the intern's ID?",
+        },
+        {
+            type: "input",
+            name: "internEmail",
+            message: "What is the interns's email?",
+        },
+        {
+            type: "input",
+            name: "internSchool",
+            message: "What is the intern's school?",
+        },
+    ]).then(function(answer) {
+        let intern = new Intern(answer.internName, answer.internID, answer.internEmail, answer.internSchool)
+        employees.push(intern);
+        createNEWemployee();
+    });
+
+} 
