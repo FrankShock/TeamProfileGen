@@ -125,3 +125,11 @@ function addIntern() {
     });
 
 } 
+
+function generateHTML(fileName, data) {
+    fs.writeFile(fileName, data, function (err) {
+        if (err) {
+            throw err;
+    }});
+};
+createNEWemployee();
