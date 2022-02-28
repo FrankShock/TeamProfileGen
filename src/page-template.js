@@ -7,14 +7,12 @@ module.exports = team => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Team Profile Generator</title>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="../stylesheet/style.css">
     </head>
-    <body class = "bg-silver">
-     <div class = "container-fluid bg-silver">
+    <body id="bgcolor" class = "bg-blue">
+     <div class = "container-fluid bg-green">
      <div class="col-12 jumbotron bg-blue text-white mb-3">
-         <h1 class="head-text text-center">Team Layout</h1>
+         <h1 class="head-text text-center">The Team Layout</h1>
          </div>
         </div>
     </div>
@@ -34,25 +32,25 @@ const Profilecreate = team  => {
 
     const Managercreate = manager => {
  return `
- <div class="card employee-card manager-card">
+ <div id="bgcolor" class="card employee-card manager-card">
         <div class= "card-header text-center">
             <h2 class="card-title">${manager.getName()}</h2>
             <h4 class="card-title">Title: ${manager.getRole()}</h4>
   </div>
   <div class="card-body bg-light">
-                <ul class="list-group text-dark">
-                    <li class="list-group-item">ID: ${manager.getId()}</li>
-                    <li class="list-group-item">Email: <a href="mailto:${manager.getEmail()}">${manager.getEmail()}</a></li>
-                    <li class="list-group-item">Office number: <a href="tel:${manager.getOfficeNumber()}">${manager.getOfficeNumber()}</a></li>
-                </ul>
-            </div>
+    <ul class="list-group text-dark">
+    <li class="list-group-item">ID: ${manager.getId()}</li>
+    <li class="list-group-item">Email: <a href="mailto:${manager.getEmail()}">${manager.getEmail()}</a></li>
+     <li class="list-group-item">Office number: <a href="tel:${manager.getOfficeNumber()}">${manager.getOfficeNumber()}</a></li>
+            </ul>
         </div>
+    </div>
         `;
     };
 
     const Engineercreate =  engineer  =>  {
         return `
-        <div class="card employee-card engineer-card">
+        <div id="bgcolor" class="card employee-card engineer-card">
             <div class="card-header text-center">
                 <h2 class="card-title">${engineer.getName()}</h2>
                 <h4 class="card-title">Title: ${engineer.getRole()}</h4>
@@ -71,7 +69,7 @@ const Profilecreate = team  => {
 
     const Interncreate = intern => {
         return `
-        <div class="card employee-card intern-card">
+        <div id="bgcolor" class="card employee-card intern-card">
             <div class="card-header text-center">
                 <h2 class="card-title">${intern.getName()}</h2>
                 <h4 class="card-title">Title: ${intern.getRole()}</h4>
