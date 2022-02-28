@@ -3,7 +3,7 @@
 ## Description
 This is a custom team  profile/layout generator. You can create new positions from Intern, engineer, and manager. You can have their name, contact, and personal info displayed.    
 ## Images
-![Screenshot1](https://github.com/FrankShock/NOTETAKER/blob/c334b74581dc23bbd1d413a01390977bc8e11ffd/Develop/public/assets/Images/Notescreenshot1.JPG)
+![Screenshot1](https://github.com/FrankShock/TeamProfileGen/blob/main/Video/Screenshot.JPG)
 
 ## Installation 
 * Clone this repository to use this application on local machine.
@@ -21,11 +21,12 @@ The test features are not running yet
 * CSS
 * Javascript
 * Express.js
+* Jest
+* Inquirier
 
 ## Repository Link
-https://github.com/FrankShock/NOTETAKER
-## Website
-https://frankshock.github.io/NOTETAKER/
+https://github.com/FrankShock/TeamProfileGen
 
 
-### ©2021 Frank Schockey's NOTETAKER
+
+### ©2022 Frank Schockey's TeamProfileGen
